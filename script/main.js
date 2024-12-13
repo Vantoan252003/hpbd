@@ -104,7 +104,7 @@ const animationTimeline = () => {
     .to(".fake-btn", 0.1, {
         backgroundColor: "rgb(127, 206, 248)",
     },
-    "+=1")
+    "+=0.25")
     .to(
         ".four",
         0.5, {
@@ -137,7 +137,7 @@ const animationTimeline = () => {
             z: 10,
             opacity: 0,
         },
-        "+=1.5"
+        "+=1"
     )
     .to(
         ".idea-5 span",
@@ -153,7 +153,7 @@ const animationTimeline = () => {
             scale: 0.2,
             opacity: 0,
         },
-        "+=2"
+        "+=1"
     )
     .staggerFrom(
         ".idea-6 span",
@@ -196,7 +196,7 @@ const animationTimeline = () => {
             y: -25,
             rotationZ: -45,
         },
-        "-=2"
+        "-=1"
     )
     .from(".hat", 0.5, {
         x: -100,
