@@ -235,6 +235,13 @@ const animationTimeline = () => {
         },
             "party"
         )
+        .to(".eight .firework", 0.5, {
+            visibility: "visible",
+            onStart: function() {
+                document.body.style.backgroundColor = "#000";
+                document.body.style.transition = "background-color 0.5s";
+            }
+        })
         .staggerTo(
             ".eight svg",
             1.5, {
@@ -242,7 +249,7 @@ const animationTimeline = () => {
             opacity: 0,
             scale: 80,
             repeat: 3,
-            repeatDelay: 1.4,
+            repeatDelay: 1.2,
         },
             0.3
         )
